@@ -7,6 +7,8 @@ Initial work done in Logic Pro X, and includes the use of several proprietary pl
 
 ## Goals
 
+- Choose a License (Apache / MIT / GPL) [https://tldrlegal.com/]
+
 - Understand the structure of a project and find commonalities between popular DAW's (Logic, Pro Tools, Cubase, Sonar)
 - Possibly create a "bootstrap" project configuration for aforementioned DAW's so that they can be easily/automatically exported to a reusable format for others to tinker with.
 - Explore the possiblities of re-using plugins or creating some sort of a plugin package manager.  Does this track use Native Instruments Guitar Rig 5?  Run "apt-get my_plugin".
