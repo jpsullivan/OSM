@@ -1,0 +1,13 @@
+var config = {}
+
+config.port = 5500;
+
+config.db = {};
+
+config.db.host = 'localhost';
+config.db.user = 'user123';
+config.db.password = 'password321';
+config.db.port = 3306;
+config.db.database = 'osm_db';
+
+module.exports = config;

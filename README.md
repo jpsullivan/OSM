@@ -14,3 +14,12 @@ Initial work done in Logic Pro X, and includes the use of several proprietary pl
 - Explore the possiblities of re-using plugins or creating some sort of a plugin package manager.  Does this track use Native Instruments Guitar Rig 5?  Run "apt-get my_plugin".
 - Understand how Git treats audio files.  Are conflicts a regular occurance?  Are diff's even possible?
 - Figure out what MIDI libraries exist in each language and how easy it will be to gather data
+
+### Set Configs
+Copy config.js.sample to config.js
+
+### Install Dependencies
+npm install
+
+### Run Server / Build Static Dependencies
+gulp

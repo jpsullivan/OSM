@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="257mm"
+   height="95mm"
+   style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd"
+   viewBox="0 0 8268 11692"
+   id="svg2">
+   <defs id="defs4">
+     <style type="text/css" id="style6">
+     
+      .str1 {stroke:#131516;stroke-width:3}
+      .str0 {stroke:#131516;stroke-width:42}
+      .fil0 {fill:none}
+      .fil1 {fill:#131516}
+     
+    </style>
+  </defs>
+  <g
+   id="whole-note"
+   transform="matrix(3.134585,0,0,3.156688,-6354.321,-12541.71)">
+   <path
+   class="fil1 str1"
+   d="M -668,6610 C -664,6684 -642,6746 -602,6794 C -562,6842 -514,6866 -458,6866 C -415,6861 -385,6847 -368,6823 C -352,6799 -344,6757 -344,6698 C -350,6622 -372,6560 -412,6513 C -452,6466 -500,6442 -558,6442 C -598,6449 -626,6463 -643,6486 C -660,6508 -668,6550 -668,6610 z M -918,6652 C -918,6591 -896,6542 -851,6505 C -806,6467 -752,6441 -689,6425 C -627,6410 -569,6402 -516,6402 C -458,6402 -397,6410 -334,6425 C -270,6440 -215,6467 -168,6504 C -121,6541 -96,6591 -94,6652 C -94,6713 -116,6763 -161,6801 C -206,6839 -260,6866 -322,6882 C -385,6898 -444,6906 -500,6906 C -560,6906 -621,6898 -685,6883 C -748,6867 -802,6841 -848,6803 C -893,6765 -917,6715 -918,6652 z "
+   id="path21"
+   style="fill:#131516;stroke:#131516;stroke-width:3" />
+ </g>
+</svg>

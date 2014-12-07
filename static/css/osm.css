@@ -1,0 +1,8 @@
+svg#canvas {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.staff-line {
+    stroke:rgb(255,0,0);stroke-width:2;
+}

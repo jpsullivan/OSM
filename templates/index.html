@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <!-- MIDI js -->
+    <script src="/static/js/MIDI/AudioDetect.js" type="text/javascript"></script>
+    <script src="/static/js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+    <script src="/static/js/MIDI/Plugin.js" type="text/javascript"></script>
+    <script src="/static/js/MIDI/Player.js" type="text/javascript"></script>
+    <script src="/static/js/MIDI/DOMLoader.XMLHttp.js" type="text/javascript"></script>
+
+    <!-- Encoders -->
+    <script src="/static/js/transcode/Base64.js" type="text/javascript"></script>
+    <script src="/static/js/transcode/base64binary.js" type="text/javascript"></script>
+
+    <!-- jasmid -->
+     <script src="/static/js/jasmid/stream.js"></script>
+     <script src="/static/js/jasmid/midifile.js"></script>
+     <script src="/static/js/jasmid/replayer.js"></script>
+
+    <!-- Snap -->
+    <script src="/static/js/snap/snap.svg-min.js"></script>
+
+    <!-- Socket IO -->
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+    <!-- Application JavaScript -->
+    <script src="/static/compiled/js/bundle.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+
+    <!-- Bootstrap Mobile Response -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Application CSS -->
+    <link rel="stylesheet" href="/static/css/osm.css">
+
+    <title>OSM Music Collaborator</title>
+</head>
+<body>
+    <div class="container">
+        <svg id="canvas">
+        </svg>
+    </div>
+
+    <script>
+    var s = Snap('#canvas');
+    var g = s.g();
+    var notes = g.image('/static/svg/Notes.svg');
+
+    </script>
+
+    <button class='btn btn-lg btn-play'>
+        <span class="glyphicon glyphicon-play"></span>
+    </button>
+    <button class='btn btn-lg btn-stop'>
+        <span class="glyphicon glyphicon-stop"></span>
+    </button>
+
+    <div class="note-list">
+    </div>
+</body>
+
+<footer>
+</footer>
+
+</html>

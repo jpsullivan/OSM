@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg>
+  <defs>
+    <style
+     type="text/css"
+     id="style6">
+     
+      .str1 {stroke:#131516;stroke-width:3}
+      .str0 {stroke:#131516;stroke-width:42}
+      .fil0 {fill:none}
+      .fil1 {fill:#131516}
+    </style>
+  </defs>
+
+  <path
+    class="fil0 str0"
+    d="M -1503,5277 L 8195,5277"
+    id="path9"
+    style="fill:none;stroke:#131516;stroke-width:42" />
+  <path
+    class="fil0 str0"
+    d="M -1503,6931 L 8195,6931"
+    id="path11"
+    style="fill:none;stroke:#131516;stroke-width:42" />
+  <path
+    class="fil0 str0"
+    d="M -1503,6379 L 8195,6379"
+    id="path13"
+    style="fill:none;stroke:#131516;stroke-width:42" />
+  <path
+    class="fil0 str0"
+    d="M -1503,5828 L 8195,5828"
+    id="path15"
+    style="fill:none;stroke:#131516;stroke-width:42" />
+  <path
+    class="fil0 str0"
+    d="M -1503,7482 L 8195,7482"
+    id="path17"
+    style="fill:none;stroke:#131516;stroke-width:42" />
+</svg>
