@@ -1,5 +1,5 @@
 var gulp        = require('gulp');
-var debug       = require('gulp-debug');
+var defineModule = require('gulp-define-module');
 var bytediff    = require('gulp-bytediff');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
@@ -15,7 +15,6 @@ var paths = {
 // JST's (should always be minified)
 gulp.task('templates', function () {
   return gulp.src(paths.templates)
-  .pipe(debug())
   .pipe(handlebars({
     // outputType: 'bare',
     // wrapped: true,
@@ -26,11 +25,10 @@ gulp.task('templates', function () {
   .pipe(declare({
     namespace: 'JST',
     processName: function (filePath) {
-      console.log(filePath);
       var lookup = 'OSM\\';
       filePath = filePath.substring((filePath.indexOf(lookup) + lookup.length), filePath.length)
       filePath = filePath.replace(/\\/g, "/"); // convert fwd-slash to backslash
-      filePath = filePath.replace('static/templates/', '');
+      filePath = filePath.replace('templates/', '');
       filePath = filePath.replace('.js', '');
       return filePath;
     }
@@ -38,6 +36,8 @@ gulp.task('templates', function () {
   .pipe(concat('templates.min.js'))
   .pipe(bytediff.start())
   .pipe(uglify())
+  // Define templates as CommonJS modules
+  .pipe(defineModule('commonjs'))
   .pipe(bytediff.stop())
   .pipe(gulp.dest(paths.jsCompiled))
 });

@@ -47,6 +47,7 @@
     "gulp-concat": "^2.4.2",
     "gulp-debug": "^1.0.1",
     "gulp-declare": "^0.3.0",
+    "gulp-define-module": "^0.1.1",
     "gulp-express": "^0.1.1",
     "gulp-handlebars": "^3.0.1",
     "gulp-notify": "^2.0.1",
