@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var debug       = require('gulp-debug');
 var bytediff    = require('gulp-bytediff');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
@@ -7,13 +8,14 @@ var declare     = require('gulp-declare');
 var wrap        = require('gulp-wrap');
 
 var paths = {
-  templates:  ['../../static/templates/**/*.hbs'],
-  jsCompiled: '../../compiled/js',
+  templates:  ['./static/templates/**/*.hbs'],
+  jsCompiled: './static/compiled/js',
 };
 
 // JST's (should always be minified)
 gulp.task('templates', function () {
   return gulp.src(paths.templates)
+  .pipe(debug())
   .pipe(handlebars({
     // outputType: 'bare',
     // wrapped: true,
@@ -24,10 +26,11 @@ gulp.task('templates', function () {
   .pipe(declare({
     namespace: 'JST',
     processName: function (filePath) {
-      var lookup = 'QuoteFlow\\';
+      console.log(filePath);
+      var lookup = 'OSM\\';
       filePath = filePath.substring((filePath.indexOf(lookup) + lookup.length), filePath.length)
       filePath = filePath.replace(/\\/g, "/"); // convert fwd-slash to backslash
-      filePath = filePath.replace('QuoteFlow/Content/views/', '');
+      filePath = filePath.replace('static/templates/', '');
       filePath = filePath.replace('.js', '');
       return filePath;
     }
